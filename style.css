@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    background: #ffffff;
+}
+
+.container {
+    border: 2px solid  #156BA5;
+    border-radius: 30px;
+    display: flex;
+    width: 660px;
+}
+
+.container img {
+    width: 260px;
+    height: auto;
+    border-radius: 28px 38px 38px 28px;
+}
+
+.sign_up {
+    margin: 20px;
+    background-image: url("assets/secLogo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.input-name {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-name label {
+    font-size: 16px;
+    color: #0D2B57;
+}
+
+.input-name input[type="text"],
+.input-name input[type="email"],
+.input-name input[type="password"] {
+    width: 100%;
+    height: 40px;
+    background: #dbdada;
+    border: none;
+    padding-left: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.input-name input.show-error {
+    border: 1px solid red;
+}
+
+button {
+    background-color: #0D2B57;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+button:hover {
+    background-color: #156BA5;
+}
+
+.signin-link,
+.signup-link {
+    text-align: left;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.captcha-box {
+    width: 160px;
+    border: 1px solid #0d2b5762;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0 10px 0 0;
+    gap: 10px;
+    background: #fff;
+    float: left;
+}
+
+.captcha-box img {
+    width: 25px;
+    height: 25px;
+}
+
+.error-msg {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}
+
+input:invalid:not(:placeholder-shown) + .error-msg {
+    display: block;
+}
+
+input.show-error + .error-msg {
+    display: block;
+}
+
+.forget {
+    justify-self: right;
+    color: #156BA5;
+    text-decoration: none;
+}
+
+.gender-options {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-login {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.social-btn {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #0D2B57;
+    color:#000;
+    background: #f0eded;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.social-btn:hover {
+    color: #fff;
+}
+
+.social-btn img {
+    width: 28px;
+    height: 28px;
+}
+
+.social-btn.google:hover {
+    background: #4e6e80;
+}
+
+.social-btn.facebook:hover {
+    background:  #156BA5;
+}
+
+.social-btn.apple:hover {
+    background: #4c4c4c;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japyara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="assets/imagee.png" alt="picture">
+        
+        <form action="signin.html" class="sign_up">
+            <div class="input-name">
+                <label>Full Name</label>
+                <div>
+                    <input 
+                        type="text" 
+                        name="fullName"
+                        placeholder="Enter full name" 
+                        pattern="[A-Za-z\s]+" 
+                        required
+                    >
+                    <span class="error-msg">Please type alphabets only</span>
+                </div>
+            </div>
+
+            <div class="input-name">
+                <label>Mobile Number</label>
+                <div>
+                    <input 
+                        type="text" 
+                        name="mobile"
+                        placeholder="Enter mobile number" 
+                        pattern="\d{10}" 
+                        maxlength="10" 
+                        required
+                    >
+                    <span class="error-msg">Enter a valid 10-digit mobile number</span>
+                </div>
+            </div>
+
+            <div class="input-name">
+                <label>Email Address</label>
+                <div>
+                    <input 
+                        type="email" 
+                        name="email"
+                        placeholder="Enter email address" 
+                        required
+                    >
+                    <span class="error-msg">Enter a valid email address</span>
+                </div>
+            </div>
+
+            <div class="input-name">
+                <label>Password</label>
+                <div>
+                    <input 
+                        type="password" 
+                        name="password"
+                        placeholder="Enter password" 
+                        pattern=".{6,}" 
+                        required
+                    >
+                    <span class="error-msg">Password must be at least 6 characters</span>
+                </div>
+            </div>
+
+            <div class="input-name">
+                <label>Confirm Password</label>
+                <div>
+                    <input 
+                        type="password" 
+                        name="confirmPassword"
+                        placeholder="Re-enter password" 
+                        required
+                    >
+                    <span class="error-msg">Passwords do not match</span>
+                </div>
+            </div>
+
+            <div class="input-name">
+                <label>Gender</label>
+                <div class="gender-options">
+                    <label>
+                        <input type="radio" name="gender" value="male" required> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Female
+                    </label>
+                </div>
+            </div>
+
+            <div class="captcha-box">
+                <input type="checkbox" id="robot-check" required>
+                <label for="robot-check">I'm not a robot</label>
+                <img src="assets/captcha.png" alt="captcha">
+            </div>
+
+            <div class="signin-link">
+                Already have an account?
+                <a href="signin.html" style="color: #156BA5;"> Log In</a>
+            </div>
+
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

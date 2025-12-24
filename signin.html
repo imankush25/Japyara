@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japyara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="assets/imagee.png" alt="picture">
+
+        <form action="index.html" class="sign_up">
+            <div class="input-name">
+                <label>Mobile Number / Email Address</label>
+                <div>
+                    <input 
+                        type="text" 
+                        name="loginId"
+                        placeholder="Enter mobile or email" 
+                        required
+                    >
+                    <span class="error-msg">Please enter mobile number or email</span>
+                </div>
+            </div>
+
+            <div class="input-name">
+                <label>Password</label>
+                <div>
+                    <input 
+                        type="password" 
+                        name="loginPassword"
+                        placeholder="Enter password" 
+                        required
+                    >
+                    <span class="error-msg">Password is required</span>
+                </div>
+            </div>
+
+            <div class="input-name">
+                <button class="login-btn" type="submit">Login</button>
+                <a href="password.html" class="forget">Forgot Password?</a>
+            </div>
+
+            <div class="signup-link">
+                Don't have an account?
+                <a href="signup.html" style="color: #156BA5;"> Sign Up</a>
+            </div>
+            <hr/>
+            <div class="social-login">
+                <button class="social-btn google">
+                    <img src="assets/google.png" alt="Google">
+                    <p>Continue with Google</p>
+                </button>
+
+                <button class="social-btn facebook">
+                    <img src="assets/facebook.png" alt="Facebook">
+                    <p>Continue with Facebook</p>
+                </button>
+
+                <button class="social-btn apple">
+                    <img src="assets/apple.png" alt="Apple">
+                    <p>Continue with Apple</p>
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
