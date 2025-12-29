@@ -168,3 +168,77 @@ input.show-error + .error-msg {
 .social-btn.apple:hover {
     background: #4c4c4c;
 }
+
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 60px;
+  }
+
+  .container {
+    width: 97%;
+    max-width: 620px;
+  }
+
+  .container img {
+    width: 200px;
+  }
+
+  .sign_up {
+    margin: 14px;
+  }
+
+  .input-name {
+    grid-template-columns: 120px 1fr;
+    margin-bottom: 12px;
+  }
+
+  .input-name label {
+    font-size: 14px;
+  }
+
+  .input-name input {
+    height: 14px;
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .signin-link,
+  .signup-link {
+    font-size: 13px;
+  }
+
+  .captcha-box {
+    width: 140px;
+    height: 30px;
+    padding: 4px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    }
+
+    .captcha-box label {
+    font-size: 14px;
+    white-space: nowrap;
+    }
+
+    .captcha-box img {
+    width: 20px;
+    height: auto;
+    }
+
+  .social-btn {
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .social-btn img {
+    width: 24px;
+    height: 24px;
+  }
+}

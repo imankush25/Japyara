@@ -405,44 +405,6 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-
-  .checkout-main {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    margin: 20px;
-  }
-
-  .address-item {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .address-actions {
-    flex-direction: row;
-    gap: 12px;
-  }
-
-  .checkout-buy-wrapper {
-    justify-content: center;
-  }
-
-  .checkout-buy-btn {
-    width: 100%;
-    text-align: center;
-  }
-  .summary-layout {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .checkout-buy-btn {
-    width: 100%;
-    text-align: center;
-  }
-
-}
-
 /* create */
 .customize-kit {
   max-width: 1100px;
@@ -1329,4 +1291,170 @@
 .review-text small {
   font-size: 12px;
   color: #777;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    margin: 5px;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .membership-cards {
+    gap: 15px;
+  }
+
+  .card {
+    height: 160px;
+    font-size: 18px;
+    border-radius: 22px;
+  }
+
+  .benefits-carousel {
+    height: 180px;
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
+  .membership-offer {
+    padding: 25px;
+    gap: 20px;
+  }
+
+  .offer-content h2 {
+    font-size: 20px;
+  }
+
+  .benefits-list li {
+    font-size: 14px;
+  }
+
+  .membership-btn {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+
+  .offer-image img {
+    width: 220px;
+  }
+
+  .checkout-main,
+  .summary-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 20px;
+  }
+
+  .address-item {
+    grid-template-columns: 20px 1fr;
+    row-gap: 12px;
+  }
+
+  .address-actions {
+    flex-direction: row;
+    margin-right: 0;
+  }
+
+  .checkout-buy-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .checkout-buy-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .kit-item {
+    grid-template-columns: 24px 110px 1fr;
+    gap: 16px;
+  }
+
+  .kit-image {
+    width: 110px;
+    height: 90px;
+  }
+
+  .kit-image img {
+    width: 60px;
+  }
+
+  .btn.save {
+    margin-right: 0;
+  }
+
+  .action-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .schedule-delivery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .vertical-divider {
+    display: none;
+  }
+
+  .date-picker {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .gift-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .gift-title {
+    font-size: 22px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .calendar-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .calendar-note {
+    font-size: 12px;
+  }
+
+  .cal {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .filter-bar {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .pandit-main {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .pandit-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .date-picker-container {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .book-btn {
+    width: 100%;
+    text-align: center;
+  }
 }

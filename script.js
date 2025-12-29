@@ -9,10 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
       menu.classList.toggle("show");
     });
 
-    document.addEventListener("click", (e) => {
-      if (!toggle.contains(e.target) && !menu.contains(e.target)) {
-        menu.classList.remove("show");
-      }
+    menu.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
+
+    document.addEventListener("click", () => {
+      menu.classList.remove("show");
     });
   }
 
@@ -54,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!loginId.value.trim()) {
         showError(loginId, "Please enter mobile number or email");
         valid = false;
-      } else if (!isEmail(loginId.value) && !isMobile(loginId.value)) {
+      } else if (!isEmail(loginId.value.trim()) && !isMobile(loginId.value.trim())) {
         showError(loginId, "Enter valid mobile or email");
         valid = false;
       }
@@ -68,6 +70,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  /* =========================
+     SIGN UP FORM
+  ========================= */
   const signupForm = document.querySelector("form[action='signin.html']");
 
   if (signupForm) {
@@ -98,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         valid = false;
       }
 
-      if (password.value.length < 6) {
+      if (password.value.trim().length < 6) {
         showError(password, "Password must be at least 6 characters");
         valid = false;
       }
@@ -110,6 +115,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!captcha.checked) {
         alert("Please verify captcha");
+        valid = false;
+      }
+
+      if (!valid) e.preventDefault();
+    });
+  }
+
+  const resetForm = document.getElementById("resetForm");
+
+  if (resetForm) {
+    resetForm.addEventListener("submit", (e) => {
+      let valid = true;
+
+      const oldPwd = resetForm.querySelector("input[name='oldPassword']");
+      const newPwd = resetForm.querySelector("input[name='newPassword']");
+      const confirmPwd = resetForm.querySelector("input[name='confirmPassword']");
+
+      [oldPwd, newPwd, confirmPwd].forEach(clearError);
+
+      if (!oldPwd.value.trim()) {
+        showError(oldPwd, "Old password is required");
+        valid = false;
+      }
+
+      if (newPwd.value.trim().length < 6) {
+        showError(newPwd, "Password must be at least 6 characters");
+        valid = false;
+      }
+
+      if (newPwd.value !== confirmPwd.value) {
+        showError(confirmPwd, "Passwords do not match");
         valid = false;
       }
 
