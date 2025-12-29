@@ -12,15 +12,18 @@
 
    <header class="top-nav">
 
-    <div class="nav-item dropdown">
-        <a><span class="nav-icon"><i class="fa-solid fa-bars"></i></span>
-        Menu</a>
+    <div class="nav-item dropdown mobile-menu-btn">
+        <a id="menuToggle">
+            <span class="nav-icon"><i class="fa-solid fa-bars"></i></span>
+            Menu
+        </a>
 
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu" id="mobileMenu">
+        <li><a href="signup.html"><i class="fa-solid fa-user-pen"></i>  Sign Up</a></li>
         <li><a href="index.html"><i class="fa-solid fa-user"></i> My Profile</a></li>
         <li><a href="orders.html"><i class="fa-solid fa-box-open"></i> Orders</a></li>
-        <li><a href="coupons.html"><i class="fa-solid fa-heart"></i> wishlist</a></li>
-        <li><a href="notification.html"><i class="fa-solid fa-bell"></i> Notification</a></li>
+        <li><a href="coupons.html"><i class="fa-solid fa-heart"></i> Wishlist</a></li>
+        <li><a href="notification.html"><i class="fa-solid fa-bell"></i> Notifications</a></li>
         <li><a href="membership.html"><i class="fa-solid fa-users-rectangle"></i> Membership</a></li>
         <li><a href="newsletter.html"><i class="fa-solid fa-newspaper"></i> Newsletter</a></li>
         <li><a href="deactive.html"><i class="fa-solid fa-spa"></i> Become Vendor</a></li>
@@ -30,7 +33,7 @@
     </div>
 
 
-    <div class="nav-item">
+    <div class="nav-item desktop-only">
         <a href="pujaKit.html">
         <span class="nav-icon"><i class="fa-solid fa-briefcase"></i></span>
         Puja Kit
@@ -38,21 +41,29 @@
     </div>
 
     <div class="nav-item">
-        <a href="panchang.html">
-        <span class="nav-icon"><i class="fa-solid fa-calendar-days"></i></span>
-        Panchang
-        </a>
-    </div>
-    <div class="nav-item">
         <a href="pandit.html">
         <span class="nav-icon"><i class="fa-solid fa-user-injured"></i></span>
         Pandit Ji
         </a>
     </div>
 
-    <div class="nav-item">
+    <div class="nav-item desktop-only">
+        <a href="membership.html">
+        <span class="nav-icon"><i class="fa-solid fa-users-rectangle"></i></span>
+        Subscription
+        </a>
+    </div>
+
+    <div class="nav-item logo-item">
         <a href="index.html">
-        <span class="nav-icon"><img src="assets/logo.png" alt="logo"></span>
+        <span class="nav-icon logo"><img src="assets/logo.png" alt="logo"></span>
+        </a>
+    </div>
+
+    <div class="nav-item desktop-only">
+        <a href="panchang.html">
+        <span class="nav-icon"><i class="fa-solid fa-calendar-days"></i></span>
+        Panchang
         </a>
     </div>
 
@@ -70,17 +81,10 @@
         </a>
     </div>
 
-    <div class="nav-item">
+    <div class="nav-item desktop-only">
         <a href="notification.html">
         <span class="nav-icon"><i class="fa-solid fa-bell"></i></span>
         Notifications
-        </a>
-    </div>
-
-    <div class="nav-item">
-        <a href="signin.html">
-        <span class="nav-icon"><i class="fa-solid fa-user-pen"></i></span>
-        Sign-In
         </a>
     </div>
 
