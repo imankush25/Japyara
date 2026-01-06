@@ -97,113 +97,71 @@
         </div>
     </div>
 
-    <section class="marquee-bar">
-        <div class="marquee-track">
-            <p>Upcoming Puja: Vasant Panchami - Offer your prayer to Maa Saraswati</p>
-            <p>Free Delivery on orders above ₹499</p>
-            <p>Use Code: JAPFIRST to get 15% off on your first order</p>
-            <p>Upcoming Puja: Vasant Panchami - Offer your prayer to Maa Saraswati</p>
-            <p>Free Delivery on orders above ₹499</p>
-            <p>Use Code: JAPFIRST to get 15% off on your first order</p>
-        </div>
+    <section class="details">
+        <form action="index.html" class="sign_up">
+            <button> Edit</button>
+            <div class="input-name">
+                <label>Full Name</label>
+                <div>
+                    <input 
+                        type="text" 
+                        name="fullName"
+                        placeholder="Enter full name" 
+                        pattern="[A-Za-z\s]+" 
+                        required
+                    >
+                    <span class="error-msg">Please type alphabets only</span>
+                </div>
+            </div>
+
+            <div class="input-name">
+                <label>Mobile Number</label>
+                <div>
+                    <input 
+                        type="text" 
+                        name="mobile"
+                        placeholder="Enter mobile number" 
+                        pattern="\d{10}" 
+                        maxlength="10" 
+                        required
+                    >
+                    <span class="error-msg">Enter a valid 10-digit mobile number</span>
+                </div>
+            </div>
+
+            <div class="input-name">
+                <label>Email Address</label>
+                <div>
+                    <input 
+                        type="email" 
+                        name="email"
+                        placeholder="Enter email address" 
+                        required
+                    >
+                    <span class="error-msg">Enter a valid email address</span>
+                </div>
+            </div>
+
+            <div class="input-name">
+                <label>Gender</label>
+                <div class="gender-options">
+                    <label>
+                        <input type="radio" name="gender" value="male" required> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Female
+                    </label>
+                </div>
+            </div>
+
+            <div class="calendar-box">
+                <label>Date of Birth</label>
+                <input type="date" class="date-picker">
+            </div>
+            <a href="password.html">Change Password</a>
+
+            <button type="submit">Save</button>
+        </form>
     </section>
-
-    <section class="calendar-offer-section">
-
-    <h2 class="calendar-title">
-        Get the special offers/discounts by creating your own calendar
-    </h2>
-
-    <div class="calendar-form">
-
-        <div class="calendar-row">
-        <label>Your date of birth</label>
-
-        <div class="calendar-input">
-            <input type="date">
-        </div>
-
-        <div class="calendar-note">
-            A complete puja kit for Diwali festival
-        </div>
-        </div>
-
-        <div class="calendar-row">
-        <label>Spouse/Son/Daughter Birth Date</label>
-
-        <div class="calendar-input">
-            <input type="date">
-        </div>
-
-        <div class="calendar-note">
-            A complete puja kit for Diwali festival
-        </div>
-        </div>
-
-        <div class="calendar-row">
-        <label>Add new important date</label>
-
-        <div class="calendar-input">
-            <span class="add-btn">
-            <i class="fa-solid fa-plus"></i>
-            </span>
-        </div>
-        </div>
-
-        <div class="calendar-actions">
-            <a href="checkout.html"><button class="save-calendar">Save Now</button></a>
-        </div>
-
-    </div>
-
-    </section>
-
-
-    <div class="hrLine"></div>
-    <section class="carousel-section">
-            <div class="single-video-wrapper">
-                <video src="videos/puja.mp4" autoplay muted loop playsinline controls ></video>
-            </div>
-    </section>
-
-    <section class="product-strip upcoming-strip">
-        <h3 class="strip-title">Upcoming Puja in this year</h3>
-
-        <div class="strip-list">
-            <div class="product-card puja">
-            <img src="assets/puja5.png" alt="Vasant Panchami">
-            </div>
-            <div class="product-card puja">
-            <img src="assets/puja1.png" alt="Vasant Panchami">
-            </div>
-            <div class="product-card puja">
-            <img src="assets/puja2.png" alt="Maha Shivratri">
-            </div>
-            <div class="product-card puja">
-            <img src="assets/puja3.png" alt="Holi Puja">
-            </div>
-            <div class="product-card puja">
-            <img src="assets/puja4.png" alt="Ram Navami">
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-    <span class="logo"><img src="assets/logo2.png" alt="logo"></span>
-    <div class="footer-links">
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
-        <a href="#">FAQ</a>
-        <a href="#">Terms & Condition</a>
-        <a href="#">Become Vendor</a>
-        <a href="#">Newsletter</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Social Media</a>
-    </div>
-    </footer>
-    <img src="assets/footer.png" alt="footer Logo" class="footer-logo"/>
-    <div class="footer-copy">
-        @ Copyright- Japyara Core Team
-    </div>
 </body>
 </html>

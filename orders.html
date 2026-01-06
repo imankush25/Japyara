@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japyara</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="index2.css"/>
+</head>
+<body>
+
+    <header class="top-nav">
+
+    <div class="nav-item dropdown mobile-menu-btn">
+        <a id="menuToggle">
+            <span class="nav-icon"><i class="fa-solid fa-bars"></i></span>
+            Menu
+        </a>
+
+        <ul class="dropdown-menu" id="mobileMenu">
+            <li><a href="profile.html"><i class="fa-solid fa-user"></i> My Profile</a></li>
+            <li><a href="orders.html"><i class="fa-solid fa-box-open"></i> Orders</a></li>
+            <li><a href="wishlist.html"><i class="fa-solid fa-heart"></i> Wishlist</a></li>
+            <li><a href="newsletter.html"><i class="fa-solid fa-newspaper"></i> Newsletter</a></li>
+            <li><a href="deactive.html"><i class="fa-solid fa-user-minus"></i> Deactivate Account</a></li>
+            <li><a href="javascript:void(0)" onclick="openLogoutPopup()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+        </ul>
+    </div>
+
+
+    <div class="nav-item desktop-only">
+        <a href="pujaKit.html">
+        <span class="nav-icon"><i class="fa-solid fa-briefcase"></i></span>
+        Puja Kit
+        </a>
+    </div>
+
+    <div class="nav-item">
+        <a href="pandit.html">
+        <span class="nav-icon"><i class="fa-solid fa-user-injured"></i></span>
+        Pandit Ji
+        </a>
+    </div>
+
+    <div class="nav-item desktop-only">
+        <a href="membership.html">
+        <span class="nav-icon"><i class="fa-solid fa-users-rectangle"></i></span>
+        Subscription
+        </a>
+    </div>
+
+    <div class="nav-item logo-item">
+        <a href="index.html">
+        <span class="nav-icon logo"><img src="assets/logo.png" alt="logo"></span>
+        </a>
+    </div>
+
+    <div class="nav-item desktop-only">
+        <a href="panchang.html">
+        <span class="nav-icon"><i class="fa-solid fa-calendar-days"></i></span>
+        Panchang
+        </a>
+    </div>
+
+    <div class="nav-item">
+        <a href="ai-search.html">
+        <span class="nav-icon"><i class="fa-brands fa-searchengin"></i></span>
+        AI Search
+        </a>
+    </div>
+
+    <div class="nav-item">
+        <a href="cart.html">
+        <span class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></span> 
+        Cart
+        </a>
+    </div>
+
+    <div class="nav-item desktop-only">
+        <a href="notification.html">
+        <span class="nav-icon"><i class="fa-solid fa-bell"></i></span>
+        Notifications
+        </a>
+    </div>
+
+    </header>
+
+    <div id="logoutPopup" class="popup-overlay">
+        <div class="popup-box">
+            <p>Are you sure you want to logout?</p>
+
+            <div class="popup-actions">
+                <button class="confirm-btn" onclick="logoutUser()">Yes</button>
+                <button class="cancel-btn" onclick="closeLogoutPopup()">No</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="orders-container">
+
+        <div class="order-search">
+            <input type="text" placeholder="Search your order here">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <div class="order-card">
+            <div class="order-left">
+                <img src="assets/flowers.png" alt="Product">
+                <div class="order-info">
+                    <h4>Ganesh Idol</h4>
+                    <p class="set">Set of 1</p>
+                    <p class="price">Rs 750/-</p>
+                </div>
+            </div>
+
+            <div class="order-middle">
+                <p class="delivery">Expected Delivery on 23 Jan 2026</p>
+                <p class="sub-text">Your order has been dispatched</p>
+                <a href="rating.html" class="review">
+                    &starf; Rate & Review product
+                </a>
+            </div>
+
+            <div class="order-right">
+                <span class="status on-way">On the way</span>
+            </div>
+        </div>
+
+        <hr>
+        <div class="order-card">
+            <div class="order-left">
+                <img src="assets/popular4.png" alt="Product">
+                <div class="order-info">
+                    <h4>Dhoop Sticks</h4>
+                    <p class="set">Set of 1</p>
+                    <p class="price">Rs 250/-</p>
+                </div>
+            </div>
+
+            <div class="order-middle">
+                <p class="delivery">Delivered on 15 Jan 2026</p>
+                <p class="sub-text">Your order has been delivered</p>
+                <a href="rating.html" class="review">
+                    &starf; Rate & Review product
+                </a>
+            </div>
+
+            <div class="order-right">
+                <span class="status delivered">Delivered</span>
+            </div>
+        </div>
+        <hr>
+        <div class="order-card">
+            <div class="order-left">
+                <img src="assets/popular5.png" alt="Product">
+                <div class="order-info">
+                    <h4>Dhoop Daan</h4>
+                    <p class="set">Set of 1</p>
+                    <p class="price">Rs 200/-</p>
+                </div>
+            </div>
+
+            <div class="order-middle">
+                <p class="delivery">Refund Completed on 20 Jan 2026</p>
+                <p class="sub-text">Product returned due to damage product received</p>
+                <span class="review disabled">
+                    &starf; Rate & Review product
+                </span>
+            </div>
+
+            <div class="order-right">
+                <span class="status returned">Returned</span>
+            </div>
+        </div>
+
+        <div class="refund-box">
+            <p class="refund-title">Refund Completed <span class="refund-id">(Refund ID: CR24090300412518843716606)</span></p>
+            <p>
+                Refund was added to your AXISBANK MASTERCARD Credit Card ************6973 on Jan 09 2026, 01:22 AM. If you can't see the refund in your bank statement(bank app/passbook), contact your bank and share refund reference number 75105174248005248984858 to track it. 
+            </p>
+            <p class="refund-note">
+                If you can't see the refund in your bank statement, contact your bank
+                and share the refund reference number.
+            </p>
+        </div>
+        <hr>
+        <div class="order-card">
+            <div class="order-left">
+                <img src="assets/utensil.png" alt="Product">
+                <div class="order-info">
+                    <h4>Brass Puja Plate</h4>
+                    <p class="set">Set of 1</p>
+                    <p class="price">Rs 1200/-</p>
+                </div>
+            </div>
+
+            <div class="order-middle">
+                <p class="delivery">Refund Completed on 20 Jan 2026</p>
+                <p class="sub-text">The delivery agent can't reach you</p>
+                <span class="review disabled">
+                    &starf; Rate & Review product
+                </span>
+            </div>
+
+            <div class="order-right">
+                <span class="status cancel">Cancelled</span>
+            </div>
+        </div>
+
+        <div class="refund-box">
+            <p class="refund-title">Refund Completed <span class="refund-id">(Refund ID: CR24090300412518843716606)</span></p>
+            <p>
+                Refund was added to your AXISBANK MASTERCARD Credit Card ************6973 on Jan 13 2026, 01:22 AM. If you can't see the refund in your bank statement(bank app/passbook), contact your bank and share refund reference number 75105174248005248984858 to track it.
+            </p>
+            <p class="refund-note">
+                If you can't see the refund in your bank statement, contact your bank
+                and share the refund reference number.
+            </p>
+        </div>
+    </section>
+</body>
+</html>

@@ -10,7 +10,7 @@
 </head>
 <body>
 
-   <header class="top-nav">
+    <header class="top-nav">
 
     <div class="nav-item dropdown mobile-menu-btn">
         <a id="menuToggle">
@@ -19,16 +19,12 @@
         </a>
 
         <ul class="dropdown-menu" id="mobileMenu">
-        <li><a href="signup.html"><i class="fa-solid fa-user-pen"></i>  Sign Up</a></li>
-        <li><a href="index.html"><i class="fa-solid fa-user"></i> My Profile</a></li>
-        <li><a href="orders.html"><i class="fa-solid fa-box-open"></i> Orders</a></li>
-        <li><a href="coupons.html"><i class="fa-solid fa-heart"></i> Wishlist</a></li>
-        <li><a href="notification.html"><i class="fa-solid fa-bell"></i> Notifications</a></li>
-        <li><a href="membership.html"><i class="fa-solid fa-users-rectangle"></i> Membership</a></li>
-        <li><a href="newsletter.html"><i class="fa-solid fa-newspaper"></i> Newsletter</a></li>
-        <li><a href="deactive.html"><i class="fa-solid fa-spa"></i> Become Vendor</a></li>
-        <li><a href="coupons.html"><i class="fa-solid fa-ticket"></i> Coupons</a></li>
-        <li><a href="logout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+            <li><a href="profile.html"><i class="fa-solid fa-user"></i> My Profile</a></li>
+            <li><a href="orders.html"><i class="fa-solid fa-box-open"></i> Orders</a></li>
+            <li><a href="wishlist.html"><i class="fa-solid fa-heart"></i> Wishlist</a></li>
+            <li><a href="newsletter.html"><i class="fa-solid fa-newspaper"></i> Newsletter</a></li>
+            <li><a href="deactive.html"><i class="fa-solid fa-user-minus"></i> Deactivate Account</a></li>
+            <li><a href="javascript:void(0)" onclick="openLogoutPopup()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
         </ul>
     </div>
 
@@ -89,6 +85,17 @@
     </div>
 
     </header>
+
+    <div id="logoutPopup" class="popup-overlay">
+        <div class="popup-box">
+            <p>Are you sure you want to logout?</p>
+
+            <div class="popup-actions">
+                <button class="confirm-btn" onclick="logoutUser()">Yes</button>
+                <button class="cancel-btn" onclick="closeLogoutPopup()">No</button>
+            </div>
+        </div>
+    </div>
 
     <div class="checkout-left" style="padding: 20px;">
 

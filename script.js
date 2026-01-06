@@ -154,3 +154,40 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
+function openLogoutPopup() {
+    document.getElementById("logoutPopup").style.display = "flex";
+}
+
+function closeLogoutPopup() {
+    document.getElementById("logoutPopup").style.display = "none";
+}
+
+function logoutUser() {
+    localStorage.clear();
+    sessionStorage.clear();
+    window.location.href = "signin.html";
+}
+
+function openDeactivatePopup() {
+    document.getElementById("deactivatePopup").style.display = "flex";
+}
+
+function closeDeactivatePopup() {
+    document.getElementById("deactivatePopup").style.display = "none";
+    window.location.href = "signin.html";
+}
+
+function redirectToHome() {
+    window.location.href = "index.html";
+}
+
+function openSubscribePopup() {
+    document.getElementById("subscribePopup").style.display = "flex";
+}
+
+function closeSubscribePopup() {
+    document.getElementById("subscribePopup").style.display = "none";
+    window.location.href = "index.html";
+}
+

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Japyara</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-  <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="index2.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japyara</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="index2.css">
 </head>
 <body>
 
-   <header class="top-nav">
+    <header class="top-nav">
 
     <div class="nav-item dropdown mobile-menu-btn">
         <a id="menuToggle">
@@ -97,95 +97,43 @@
         </div>
     </div>
 
-    <section class="checkout-main">
-        <div class="checkout-left">
+    <section class="newsletter-overlay">
+        <div class="newsletter-box">
 
-            <div class="address-card">
-
-            <div class="address-header">
-                <span class="address-title">Delivery Address</span>
+            <div class="icon-circle">
+                <i class="fas fa-newspaper"></i>
             </div>
 
-            <div class="address-item">
-                <input type="radio" checked />
-                <div class="address-details">
-                <strong>Sandy Cruize</strong>
-                <p>
-                    ABC Apartment, 303, ABC Road,<br>
-                    Pune - 123456, MH
-                </p>
-                <p>Mobile - 9898989989</p>
-                </div>
+            <h2>SUBSCRIBE<br>OUR NEWSLETTER</h2>
 
-                <div class="address-actions">
-                <button class="edit-btn">Edit</button>
-                <button class="deliver-btn">Deliver here</button>
-                </div>
-            </div>
-
-            <div class="add-new-address">
-                <i class="fa-solid fa-plus"></i>
-                <span>Add New Address</span>
-            </div>
-
-            </div>
-
-        </div>
-
-        <div class="checkout-right">
-
-            <div class="price-card">
-            <h4 class="price-title">PRICE DETAILS</h4>
-
-            <div class="price-row">
-                <span>Price (3 items)</span>
-                <span>₹1,323</span>
-            </div>
-
-            <div class="price-row">
-                <span>Platform Fee</span>
-                <span>₹7</span>
-            </div>
-
-            <hr />
-
-            <div class="price-row total">
-                <span>Total Payable</span>
-                <span>₹1,330</span>
-            </div>
-
-            <p class="saving-text">
-                Your Total Savings on this order ₹2,968
+            <p>
+                Subscribe our newsletter and stay up to date with the
+                latest news about design system.
             </p>
 
-            <div class="secure-text">
-                <i class="fa-solid fa-shield-halved"></i>
-                Safe and Secure Payments. Easy returns.<br />
-                100% Authentic products.
-            </div>
-            </div>
+            <input type="email" placeholder="Enter your email here">
 
-            <p class="terms-text">Terms & Conditions applicable</p>
+            <button class="subscribe-btn" onclick="openSubscribePopup()">Subscribe</button>
 
-            <div class="delivery-pill">
-            Expected Delivery by 29.12.2025, Monday
-            </div>
-
-            <a href="summary.html" class="checkout-buy-wrapper">
-            <button class="checkout-buy-btn">Proceed</button>
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <div class="hrLine"></div>
-    <section class="carousel-section">
-        <div class="single-video-wrapper">
-            <video src="videos/puja.mp4" autoplay muted loop playsinline controls ></video>
         </div>
     </section>
 
+    <div id="deactivatePopup" class="popup-overlay">
+        <div class="popup-box">
+            <p class="popup-text">Your account has been deactivated.</p>
+            <button class="popup-ok-btn" onclick="closeDeactivatePopup()">Ok</button>
+        </div>
+    </div>
+
+    <div id="subscribePopup" class="popup-overlay">
+        <div class="popup-box">
+            <p class="popup-text">
+                Newsletter has been subscribed successfully
+            </p>
+            <button class="popup-ok-btn" onclick="closeSubscribePopup()">Ok</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

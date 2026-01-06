@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Japyara</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-  <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="index2.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japyara</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="index2.css">
 </head>
 <body>
 
-   <header class="top-nav">
+    <header class="top-nav">
 
     <div class="nav-item dropdown mobile-menu-btn">
         <a id="menuToggle">
@@ -97,95 +97,84 @@
         </div>
     </div>
 
-    <section class="checkout-main">
-        <div class="checkout-left">
+    <section class="deactivate-section">
 
-            <div class="address-card">
+        <h2 class="title">"We're sorry to see you go."</h2>
+        <p class="subtitle">Mind telling us why you're leaving?</p>
 
-            <div class="address-header">
-                <span class="address-title">Delivery Address</span>
-            </div>
+        <div class="options">
+            <label class="option">
+                <input type="checkbox">
+                <span>Privacy concerns</span>
+            </label>
 
-            <div class="address-item">
-                <input type="radio" checked />
-                <div class="address-details">
-                <strong>Sandy Cruize</strong>
-                <p>
-                    ABC Apartment, 303, ABC Road,<br>
-                    Pune - 123456, MH
-                </p>
-                <p>Mobile - 9898989989</p>
-                </div>
+            <label class="option">
+                <input type="checkbox">
+                <span>Too many notifications</span>
+            </label>
 
-                <div class="address-actions">
-                <button class="edit-btn">Edit</button>
-                <button class="deliver-btn">Deliver here</button>
-                </div>
-            </div>
-
-            <div class="add-new-address">
-                <i class="fa-solid fa-plus"></i>
-                <span>Add New Address</span>
-            </div>
-
-            </div>
-
+            <label class="option">
+                <input type="checkbox">
+                <span>Temporary break</span>
+            </label>
         </div>
 
-        <div class="checkout-right">
+        <hr>
 
-            <div class="price-card">
-            <h4 class="price-title">PRICE DETAILS</h4>
+        <h3 class="section-heading">Deactivation</h3>
 
-            <div class="price-row">
-                <span>Price (3 items)</span>
-                <span>₹1,323</span>
-            </div>
+        <div class="options">
+            <label class="option">
+                <input type="radio" name="deactivate">
+                <span>Deactivate for 1 Day</span>
+            </label>
 
-            <div class="price-row">
-                <span>Platform Fee</span>
-                <span>₹7</span>
-            </div>
+            <label class="option">
+                <input type="radio" name="deactivate">
+                <span>Deactivate for 1 Week</span>
+            </label>
 
-            <hr />
+            <label class="option">
+                <input type="radio" name="deactivate">
+                <span>Deactivate for 1 Month</span>
+            </label>
+        </div>
 
-            <div class="price-row total">
-                <span>Total Payable</span>
-                <span>₹1,330</span>
-            </div>
+        <div class="deactivate-disclaimer">
+            <h4 class="disclaimer-title">Disclaimer</h4>
 
-            <p class="saving-text">
-                Your Total Savings on this order ₹2,968
+            <p class="disclaimer-text">
+                Your subscription plan will not be valid. Deactivating will not refund the amount.
             </p>
 
-            <div class="secure-text">
-                <i class="fa-solid fa-shield-halved"></i>
-                Safe and Secure Payments. Easy returns.<br />
-                100% Authentic products.
+            <p class="disclaimer-text">
+                Your Wishlists, Cart Items, Order History, Review & Rating will not get retained.
+            </p>
+
+            <p class="disclaimer-text">
+                Profile will be hidden until decide to come back. Login any time to reactivate.
+            </p>
+
+            <div class="action-buttons">
+                <button class="btn-deactivate" onclick="openDeactivatePopup()">
+                    Deactivate
+                </button>
+
+                <button class="btn-keep" onclick="redirectToHome()">
+                    Keep Account
+                </button>
             </div>
-            </div>
 
-            <p class="terms-text">Terms & Conditions applicable</p>
-
-            <div class="delivery-pill">
-            Expected Delivery by 29.12.2025, Monday
-            </div>
-
-            <a href="summary.html" class="checkout-buy-wrapper">
-            <button class="checkout-buy-btn">Proceed</button>
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <div class="hrLine"></div>
-    <section class="carousel-section">
-        <div class="single-video-wrapper">
-            <video src="videos/puja.mp4" autoplay muted loop playsinline controls ></video>
         </div>
     </section>
 
+    <div id="deactivatePopup" class="popup-overlay">
+        <div class="popup-box">
+            <p class="popup-text">Your account has been deactivated.</p>
+            <button class="popup-ok-btn" onclick="closeDeactivatePopup()">Ok</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
