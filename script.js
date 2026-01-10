@@ -1,3 +1,64 @@
+document.addEventListener("DOMContentLoaded", function () {
+
+    document.querySelectorAll(".cat-arrows").forEach(arrows => {
+
+        const header = arrows.closest(".section-header");
+        if (!header) return;
+
+        const slider = header.nextElementSibling;
+        if (!slider || !slider.classList.contains("cat-slider")) return;
+
+        const track =
+            slider.querySelector(".cat-list") ||
+            slider.querySelector(".puja-kit-list");
+
+        if (!track) return;
+
+        const items = track.children;
+        const buttons = arrows.querySelectorAll(".cat-nav");
+
+        const gap = 32; // must match CSS
+        let index = 0;
+        let itemWidth, visibleCount, maxIndex;
+
+        function calculate() {
+            itemWidth = items[0].offsetWidth + gap;
+            visibleCount = Math.floor(slider.offsetWidth / itemWidth);
+            maxIndex = Math.max(items.length - visibleCount, 0);
+        }
+
+        function moveSlider() {
+            track.style.transform = `translateX(-${index * itemWidth}px)`;
+
+            buttons.forEach(btn => btn.classList.remove("disabled"));
+            if (index === 0) buttons[0].classList.add("disabled");
+            if (index >= maxIndex) buttons[1].classList.add("disabled");
+        }
+
+        buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const dir = btn.dataset.dir;
+
+                if (dir === "next" && index < maxIndex) index++;
+                if (dir === "prev" && index > 0) index--;
+
+                moveSlider();
+            });
+        });
+
+        window.addEventListener("resize", () => {
+            calculate();
+            index = Math.min(index, maxIndex);
+            moveSlider();
+        });
+
+        calculate();
+        moveSlider();
+    });
+
+});
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const toggle = document.getElementById("menuToggle");
