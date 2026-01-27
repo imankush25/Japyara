@@ -4,92 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japyara</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="home.css"/>
     <link rel="stylesheet" href="index.css"/>
     <link rel="stylesheet" href="index2.css"/>
 </head>
 <body>
-
-    <header class="top-nav">
-
-    <div class="nav-item dropdown mobile-menu-btn">
-        <a id="menuToggle">
-            <span class="nav-icon"><i class="fa-solid fa-bars"></i></span>
-            Menu
-        </a>
-
-        <ul class="dropdown-menu" id="mobileMenu">
-            <li><a href="profile.html"><i class="fa-solid fa-user"></i> My Profile</a></li>
-            <li><a href="orders.html"><i class="fa-solid fa-box-open"></i> Orders</a></li>
-            <li><a href="wishlist.html"><i class="fa-solid fa-heart"></i> Wishlist</a></li>
-            <li><a href="newsletter.html"><i class="fa-solid fa-newspaper"></i> Newsletter</a></li>
-            <li><a href="deactive.html"><i class="fa-solid fa-user-minus"></i> Deactivate Account</a></li>
-            <li><a href="javascript:void(0)" onclick="openLogoutPopup()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
-        </ul>
+    <div class="top-announcement">
+        ORDERING AND DELIVERY OF PERISHABLE PRODUCTS WILL GET DONE WITHIN 24 HOURS.
     </div>
 
+    <header class="main-header">
 
-    <div class="nav-item desktop-only">
-        <a href="pujaKit.html">
-        <span class="nav-icon"><i class="fa-solid fa-briefcase"></i></span>
-        Puja Kit
-        </a>
-    </div>
+        <div class="nav-left">
+            <div class="nav-item dropdown mobile-menu-btn">
+                <a id="menuToggle">
+                    <span class="nav-icon"><i class="bi bi-list"></i></span>
+                    Menu
+                </a>
 
-    <div class="nav-item">
-        <a href="pandit.html">
-        <span class="nav-icon"><i class="fa-solid fa-user-injured"></i></span>
-        Pandit Ji
-        </a>
-    </div>
+                <ul class="dropdown-menu" id="mobileMenu">
+                    <li><a href="profile.html"><i class="bi bi-person"></i> My Profile</a></li>
+                    <li><a href="orders.html"><i class="bi bi-box-seam"></i> Orders</a></li>
+                    <li><a href="wishlist.html"><i class="bi bi-bag-heart"></i> Wishlist</a></li>
+                    <li><a href="newsletter.html"><i class="bi bi-newspaper"></i> Newsletter</a></li>
+                    <li><a href="deactive.html"><i class="bi bi-person-dash"></i> Deactivate Account</a></li>
+                    <li><a href="javascript:void(0)" onclick="openLogoutPopup()"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <a href="pujaKit.html"><i class="bi bi-flower1"></i>
+                <span>Puja Kit</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="panchang.html"><i class="bi bi-calendar-event"></i>
+                <span>Panchang</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="pandit.html"><i class="bi bi-person"></i>
+                <span>Pandit ji</span></a>
+            </div>
+            <div class="nav-item hot">
+                <i class="bi bi-fire"></i>
+                <span>Hot Deals</span>
+            </div>
+        </div>
 
-    <div class="nav-item desktop-only">
-        <a href="membership.html">
-        <span class="nav-icon"><i class="fa-solid fa-users-rectangle"></i></span>
-        Subscription
-        </a>
-    </div>
+        <div class="header-logo">
+            <a href="index.html"><img src="assets/logo.png" alt="Logo"></a>
+        </div>
 
-    <div class="nav-item logo-item">
-        <a href="index.html">
-        <span class="nav-icon logo"><img src="assets/logo.png" alt="logo"></span>
-        </a>
-    </div>
-
-    <div class="nav-item desktop-only">
-        <a href="panchang.html">
-        <span class="nav-icon"><i class="fa-solid fa-calendar-days"></i></span>
-        Panchang
-        </a>
-    </div>
-
-    <div class="nav-item">
-        <a href="ai-search.html">
-        <span class="nav-icon"><i class="fa-brands fa-searchengin"></i></span>
-        AI Search
-        </a>
-    </div>
-
-    <div class="nav-item">
-        <a href="cart.html">
-        <span class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></span> 
-        Cart
-        </a>
-    </div>
-
-    <div class="nav-item desktop-only">
-        <a href="notification.html">
-        <span class="nav-icon"><i class="fa-solid fa-bell"></i></span>
-        Notifications
-        </a>
-    </div>
+        <div class="nav-right">
+            <div class="nav-item">
+                <i class="bi bi-search"></i>
+                <span>AI Search</span>
+            </div>
+            <div class="nav-item">
+                <a href="wishlist.html"><i class="bi bi-heart"></i>
+                <span>Wishlist</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="cart.html"><i class="bi bi-cart3"></i>
+                <span>Cart</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="notification.html"><i class="bi bi-bell"></i>
+                <span>Notifications</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="signin.html"><i class="bi bi-person-circle"></i>
+                <span>Sign In</span></a>
+            </div>
+        </div>
 
     </header>
+
+    <section class="marquee-bar">
+        <div class="marquee-track">
+            <span><i class="bi bi-calendar-event"></i> Upcoming Festival: Masik Shivaratri - Offer your prayers to Lord Shiva!</span>
+            <span><i class="bi bi-tags"></i> Special Offer: Use code JAPYARA10 for 10% OFF on your first order!</span>
+            <span><i class="bi bi-truck"></i> Free Delivery on orders above ₹499!</span>
+            <span><i class="bi bi-calendar-event"></i> Upcoming Festival: Masik Shivaratri - Offer your prayers to Lord Shiva!</span>
+            <span><i class="bi bi-tags"></i> Special Offer: Use code JAPYARA10 for 10% OFF on your first order!</span>
+            <span><i class="bi bi-truck"></i> Free Delivery on orders above ₹499!</span>
+        </div>
+    </section>
 
     <div id="logoutPopup" class="popup-overlay">
         <div class="popup-box">
             <p>Are you sure you want to logout?</p>
-
             <div class="popup-actions">
                 <button class="confirm-btn" onclick="logoutUser()">Yes</button>
                 <button class="cancel-btn" onclick="closeLogoutPopup()">No</button>
@@ -97,79 +101,294 @@
         </div>
     </div>
 
-    <section class="marquee-bar">
-        <div class="marquee-track">
-            <p>Upcoming Puja: Vasant Panchami - Offer your prayer to Maa Saraswati</p>
-            <p>Free Delivery on orders above ₹499</p>
-            <p>Use Code: JAPFIRST to get 15% off on your first order</p>
-            <p>Upcoming Puja: Vasant Panchami - Offer your prayer to Maa Saraswati</p>
-            <p>Free Delivery on orders above ₹499</p>
-            <p>Use Code: JAPFIRST to get 15% off on your first order</p>
-        </div>
-    </section>
+    <section class="active-membership">
+        <div class="current-plan-card">
 
-    <section class="membership-section">
+            <div class="current-plan-header">
+                <div class="user-info">
+                    <h2>Ankush Kumar</h2>
+                    <div class="plan-tag">
+                        <i class="fas fa-crown"></i> Samarpan
+                    </div>
+                    <div class="validity">
+                        <p>valid till March 13, 2026</p>
+                    </div>
+                </div>
 
-        <div class="membership-cards">
-            <div class="card gold">
-                <p>Gold</p>
+                <div class="plan-points">
+                    <i class="fas fa-fire"></i> 230
+                </div>
             </div>
 
-            <div class="card silver">
-                <p>Silver</p>
+            <div class="upgrade-strip">
+                <span>Upgrade to Sanatan</span>
+                <button>Upgrade</button>
             </div>
 
-            <div class="card bronze">
-                <p>Bronze</p>
-            </div>
         </div>
 
-        <div class="benefits-carousel">
-            <p>It will display the membership benefits</p>
-        </div>
 
-    </section>
-
-    <section class="membership-offer">
-
-        <div class="offer-content">
-            <h2>Gold membership in just Rs 499</h2>
-
-            <ul class="benefits-list">
-                <li>It will display the membership benefits</li>
-                <li>It will display the membership benefits</li>
-                <li>It will display the membership benefits</li>
-                <li>It will display the membership benefits</li>
-                <li>It will display the membership benefits</li>
-                <li>It will display the membership benefits</li>
+        <div class="membership-benefits">
+            <h3>Current Membership Cover</h3>
+            <ul>
+                <li>5% cashback on every order</li>
+                <li>Voice enabled search</li>
+                <li>Special discounts on festive offers</li>
+                <li>Free delivery above ₹499</li>
             </ul>
-
-            <a href="payment.html"><button class="membership-btn">Get Membership</button></a>
+            <div class="membership-actions">
+                <button class="action-btn pause-btn">Pause for a week</button>
+                <button class="action-btn cancel-btn">Cancel Membership</button>
+                <button class="action-btn renew-btn">Renew Now</button>
+            </div>
         </div>
-
-        <div class="offer-image">
-            <img src="assets/premium.png">
-        </div>
-
     </section>
 
-    <footer class="footer">
-    <img src="assets/logo2.png" alt="logo">
-    <div class="footer-links">
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
-        <a href="#">FAQ</a>
-        <a href="#">Terms & Condition</a>
-        <a href="#">Become Vendor</a>
-        <a href="#">Newsletter</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Social Media</a>
-    </div>
+    <section class="plan-comparison">
+        <h2>Sanatan Membership Kit Comparison</h2>
+
+        <div class="comparison-table">
+            <div class="row header">
+                <div class="cell feature"> </div>
+                <div class="cell silver">Nitya</div>
+                <div class="cell gold">Samarpan</div>
+                <div class="cell platinum">Sanatan</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Organic bamboo-less agarbatti (100 sticks)</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Organic bamboo-less dhoop (24 sticks)</div>
+                <div class="cell no">✖</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Cotton batti (200 pcs)</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Cow ghee (500 ml)</div>
+                <div class="cell no">✖</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Akshat – Rice (100 g)</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Kumkum (20 g)</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Sindur (20 g)</div>
+                <div class="cell no">✖</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Premium chandan (20 g)</div>
+                <div class="cell no">✖</div>
+                <div class="cell no">✖</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Kapoor (50 g)</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Panch Gavya Griha Shuddhi Diya (12 pcs)</div>
+                <div class="cell no">✖</div>
+                <div class="cell no">✖</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Loban cups (12 pcs)</div>
+                <div class="cell no">✖</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Haldi (20 g)</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Gangajal (75 ml)</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Honey (20 g)</div>
+                <div class="cell no">✖</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Itra – Natural fragrance (20 ml)</div>
+                <div class="cell no">✖</div>
+                <div class="cell no">✖</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Bhasma (20 g)</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Kalawa (Mauli) – 1 pc</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+            <div class="row">
+                <div class="cell feature">Matchbox (100 sticks)</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+                <div class="cell yes">✔</div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="membership-faq">
+        <h3>FAQ</h3>
+        <div class="faq-item">
+            <p class="question">What is Japyara Sanatan?</p>
+            <p class="answer">Sanatan is our premium membership plan offering cashback, Voice enabled search, and free deliveries above ₹499.</p>
+        </div>
+        <div class="faq-item">
+            <p class="question">How do I upgrade my plan?</p>
+            <p class="answer">Click the Upgrade button in your active membership card to select a higher plan.</p>
+        </div>
+        <div class="faq-item">
+            <p class="question">Can I pause my membership?</p>
+            <p class="answer">Yes, you can pause your membership for a week using the Pause button in your benefits section.</p>
+        </div>
+        <div class="faq-item">
+            <p class="question">How do I cancel my membership?</p>
+            <p class="answer">Click the Cancel Membership button and confirm your action in the popup.</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+
+        <div class="footer-overlay">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <img src="assets/logo2.png" alt="Japyara">
+                    <p>
+                        We curate authentic puja essentials and kits with purity,
+                        care, and reverence—making every ritual simple, sacred,
+                        and meaningful.
+                    </p>
+                </div>
+ 
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <a href="#">Murti & Vastra</a>
+                    <a href="#">Puja Bartan</a>
+                    <a href="#">Ghee & Teil</a>
+                    <a href="#">Dhup & Agarbatti</a>
+                    <a href="#">Pustak & Yantra</a>
+                    <a href="#">Photo Frame</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Trending Collection</h4>
+                    <a href="#">Puja Kits Collection</a>
+                    <a href="#">Aarti Thali Collection</a>
+                    <a href="#">Brass Bell Collection</a>
+                    <a href="#">Spiritual Santo Sticks</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Hot Deals</h4>
+                    <a href="#">Ghee Diya Batti</a>
+                    <a href="#">Round Roli Akshat Pooja Thali</a>
+                    <a href="#">Golden Ganesha Showpiece Peacock</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Become Vendor</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Socials</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Google</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>Copyright © 2026. All Rights Reserved</span>
+
+                <div class="footer-links">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+
+        </div>
+
     </footer>
-    <img src="assets/footer.png" alt="footer Logo" class="footer-logo"/>
-    <div class="footer-copy">
-        @ Copyright- Japyara Core Team
+
+
+    <div id="membershipPopup" class="popup-overlay">
+        <div class="popup-box">
+            <p id="popup-message">Are you sure?</p>
+            <div class="popup-actions">
+                <button class="confirm-btn" id="confirmAction">Yes</button>
+                <button class="cancel-btn" onclick="closeMembershipPopup()">No</button>
+            </div>
+        </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
+
+
 </html>

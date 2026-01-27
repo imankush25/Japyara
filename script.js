@@ -1,3 +1,12 @@
+const cards = document.querySelectorAll(".membership-card");
+
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+      cards.forEach(c => c.classList.remove("active", "featured"));
+      card.classList.add("active");
+    });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelectorAll(".cat-arrows").forEach(arrows => {
@@ -17,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const items = track.children;
         const buttons = arrows.querySelectorAll(".cat-nav");
 
-        const gap = 32; // must match CSS
+        const gap = 32;
         let index = 0;
         let itemWidth, visibleCount, maxIndex;
 
@@ -252,3 +261,50 @@ function closeSubscribePopup() {
     window.location.href = "index.html";
 }
 
+document.querySelectorAll(".faq-item .question").forEach(question => {
+    question.addEventListener("click", () => {
+        const answer = question.nextElementSibling;
+        answer.style.display =
+            answer.style.display === "block" ? "none" : "block";
+    });
+});
+
+
+document.querySelector(".upgrade-strip button").addEventListener("click", () => {
+    const confirmUpgrade = confirm(
+        "Upgrade to Sanatan Membership?\nAny remaining days will be adjusted."
+    );
+    if (confirmUpgrade) {
+        alert("Redirecting to Payment Page...");
+        window.location.href = "payment.html";
+    }
+});
+
+document.querySelector(".pause-btn").addEventListener("click", () => {
+    const confirmPause = confirm(
+        "Pause your membership for a week?\nBenefits will resume automatically."
+    );
+    if (confirmPause) {
+        alert("Membership paused for 7 days.");
+    }
+});
+
+document.querySelector(".cancel-btn").addEventListener("click", () => {
+    const confirmCancel = confirm(
+        "Are you sure you want to cancel your membership?\nThis action cannot be undone."
+    );
+    if (confirmCancel) {
+        alert("Your membership has been cancelled.");
+    }
+});
+
+document.querySelector(".renew-btn").addEventListener("click", () => {
+    alert("Redirecting to renewal payment...");
+    window.location.href = "payment.html";
+});
+
+function scrollToComparison() {
+    document
+        .querySelector(".plan-comparison")
+        .scrollIntoView({ behavior: "smooth" });
+}

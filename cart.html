@@ -4,85 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Japyara</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-  <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="index2.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="home.css"/>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index2.css" />
 </head>
 <body>
 
-    <header class="top-nav">
-
-    <div class="nav-item dropdown mobile-menu-btn">
-        <a id="menuToggle">
-            <span class="nav-icon"><i class="fa-solid fa-bars"></i></span>
-            Menu
-        </a>
-
-        <ul class="dropdown-menu" id="mobileMenu">
-            <li><a href="profile.html"><i class="fa-solid fa-user"></i> My Profile</a></li>
-            <li><a href="orders.html"><i class="fa-solid fa-box-open"></i> Orders</a></li>
-            <li><a href="wishlist.html"><i class="fa-solid fa-heart"></i> Wishlist</a></li>
-            <li><a href="newsletter.html"><i class="fa-solid fa-newspaper"></i> Newsletter</a></li>
-            <li><a href="deactive.html"><i class="fa-solid fa-user-minus"></i> Deactivate Account</a></li>
-            <li><a href="javascript:void(0)" onclick="openLogoutPopup()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
-        </ul>
+    <div class="top-announcement">
+        ORDERING AND DELIVERY OF PERISHABLE PRODUCTS WILL GET DONE WITHIN 24 HOURS.
     </div>
 
+    <header class="main-header">
 
-    <div class="nav-item desktop-only">
-        <a href="pujaKit.html">
-        <span class="nav-icon"><i class="fa-solid fa-briefcase"></i></span>
-        Puja Kit
-        </a>
-    </div>
+        <div class="nav-left">
+            <div class="nav-item dropdown mobile-menu-btn">
+                <a id="menuToggle">
+                    <span class="nav-icon"><i class="bi bi-list"></i></span>
+                    Menu
+                </a>
 
-    <div class="nav-item">
-        <a href="pandit.html">
-        <span class="nav-icon"><i class="fa-solid fa-user-injured"></i></span>
-        Pandit Ji
-        </a>
-    </div>
+                <ul class="dropdown-menu" id="mobileMenu">
+                    <li><a href="profile.html"><i class="bi bi-person"></i> My Profile</a></li>
+                    <li><a href="orders.html"><i class="bi bi-box-seam"></i> Orders</a></li>
+                    <li><a href="wishlist.html"><i class="bi bi-bag-heart"></i> Wishlist</a></li>
+                    <li><a href="newsletter.html"><i class="bi bi-newspaper"></i> Newsletter</a></li>
+                    <li><a href="deactive.html"><i class="bi bi-person-dash"></i> Deactivate Account</a></li>
+                    <li><a href="javascript:void(0)" onclick="openLogoutPopup()"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <a href="pujaKit.html"><i class="bi bi-flower1"></i>
+                <span>Puja Kit</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="panchang.html"><i class="bi bi-calendar-event"></i>
+                <span>Panchang</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="pandit.html"><i class="bi bi-person"></i>
+                <span>Pandit ji</span></a>
+            </div>
+            <div class="nav-item hot">
+                <i class="bi bi-fire"></i>
+                <span>Hot Deals</span>
+            </div>
+        </div>
 
-    <div class="nav-item desktop-only">
-        <a href="membership.html">
-        <span class="nav-icon"><i class="fa-solid fa-users-rectangle"></i></span>
-        Subscription
-        </a>
-    </div>
+        <div class="header-logo">
+            <a href="index.html"><img src="assets/logo.png" alt="Logo"></a>
+        </div>
 
-    <div class="nav-item logo-item">
-        <a href="index.html">
-        <span class="nav-icon logo"><img src="assets/logo.png" alt="logo"></span>
-        </a>
-    </div>
-
-    <div class="nav-item desktop-only">
-        <a href="panchang.html">
-        <span class="nav-icon"><i class="fa-solid fa-calendar-days"></i></span>
-        Panchang
-        </a>
-    </div>
-
-    <div class="nav-item">
-        <a href="ai-search.html">
-        <span class="nav-icon"><i class="fa-brands fa-searchengin"></i></span>
-        AI Search
-        </a>
-    </div>
-
-    <div class="nav-item">
-        <a href="cart.html">
-        <span class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></span> 
-        Cart
-        </a>
-    </div>
-
-    <div class="nav-item desktop-only">
-        <a href="notification.html">
-        <span class="nav-icon"><i class="fa-solid fa-bell"></i></span>
-        Notifications
-        </a>
-    </div>
+        <div class="nav-right">
+            <div class="nav-item">
+                <i class="bi bi-search"></i>
+                <span>AI Search</span>
+            </div>
+            <div class="nav-item">
+                <a href="wishlist.html"><i class="bi bi-heart"></i>
+                <span>Wishlist</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="cart.html"><i class="bi bi-cart3"></i>
+                <span>Cart</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="notification.html"><i class="bi bi-bell"></i>
+                <span>Notifications</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="signin.html"><i class="bi bi-person-circle"></i>
+                <span>Sign In</span></a>
+            </div>
+        </div>
 
     </header>
 

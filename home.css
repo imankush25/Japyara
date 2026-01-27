@@ -785,7 +785,16 @@ h2 {
     background: var(--primary-gradient);
 }
 
-.membership-card.gold {
+.badge{
+    color: #fff;
+    background: #ff9800;
+    width:50px;
+    padding: 5px 10px;
+    margin-left: -24px;
+    border-radius: 18px 0px;
+}
+
+.membership-card.active {
     border: none;
     background: linear-gradient(
         180deg,
@@ -796,26 +805,25 @@ h2 {
     color: #ffffff;
 }
 
-.membership-card.gold h3,
-.membership-card.gold h3 span,
-.membership-card.gold .tagline,
-.membership-card.gold .description,
-.membership-card.gold .price span,
-.membership-card.gold .features li,
-.membership-card.gold .price strong {
+.membership-card.active h3,
+.membership-card.active h3 span,
+.membership-card.active .tagline,
+.membership-card.active .description,
+.membership-card.active .price span,
+.membership-card.active .features li,
+.membership-card.active .price strong {
     color: #ffffff;
 }
 
-.membership-card.gold .features i {
+.membership-card.active .features i {
     background: #ffffff;
     color: #2563eb;
 }
 
-.membership-card.gold .signup-btn {
+.membership-card.active .signup-btn {
     background: rgba(255, 255, 255, 0.2);
     border: 1.5px solid rgba(255, 255, 255, 0.7);
 }
-
 
 /* all plans*/
 
