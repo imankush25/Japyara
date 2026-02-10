@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japyara</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="internal.css"/>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <div class="top-announcement">
+        ORDERING AND DELIVERY OF PERISHABLE PRODUCTS WILL GET DONE WITHIN 24 HOURS.
+    </div>
+
+    <header class="main-header">
+
+        <div class="nav-left">
+            <div class="nav-item dropdown mobile-menu-btn">
+                <a id="menuToggle">
+                    <span class="nav-icon"><i class="bi bi-list"></i></span>
+                    Menu
+                </a>
+
+                <ul class="dropdown-menu" id="mobileMenu">
+                    <li><a href="profile.html"><i class="bi bi-person"></i> My Profile</a></li>
+                    <li><a href="orders.html"><i class="bi bi-box-seam"></i> Orders</a></li>
+                    <li><a href="wishlist.html"><i class="bi bi-bag-heart"></i> Wishlist</a></li>
+                    <li><a href="newsletter.html"><i class="bi bi-newspaper"></i> Newsletter</a></li>
+                    <li><a href="deactive.html"><i class="bi bi-person-dash"></i> Deactivate Account</a></li>
+                    <li><a href="javascript:void(0)" onclick="openLogoutPopup()"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <a href="pujaKit.html"><i class="bi bi-flower1"></i>
+                <span>Puja Kit</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="panchang.html"><i class="bi bi-calendar-event"></i>
+                <span>Panchang</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="pandit.html"><i class="bi bi-person"></i>
+                <span>Pandit ji</span></a>
+            </div>
+            <div class="nav-item hot">
+                <i class="bi bi-fire"></i>
+                <span>Hot Deals</span>
+            </div>
+        </div>
+
+        <div class="header-logo">
+            <a href="index.html"><img src="assets/logo.png" alt="Logo"></a>
+        </div>
+
+        <div class="nav-right">
+            <div class="nav-item">
+                <i class="bi bi-search"></i>
+                <span>AI Search</span>
+            </div>
+            <div class="nav-item">
+                <a href="wishlist.html"><i class="bi bi-heart"></i>
+                <span>Wishlist</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="cart.html"><i class="bi bi-cart3"></i>
+                <span>Cart</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="notification.html"><i class="bi bi-bell"></i>
+                <span>Notifications</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="signin.html"><i class="bi bi-person-circle"></i>
+                <span>Sign In</span></a>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="privacy-section">
+
+        <div class="terms-hero">
+            <div class="faq-hero-overlay">
+                <h1>TERMS AND CONDITIONS</h1>
+                <p>
+                    By accessing or using our website, you agree to be bound by these Terms & Conditions.
+                </p>
+            </div>
+        </div>
+
+        <div class="privacy-container">
+
+            <div class="policy-card">
+                <h3><span>1.</span> Use Of The Website</h3>
+                <p>
+                    You agree to use this Website only for lawful purposes and in a way that does not
+                    infringe the rights of, restrict, or inhibit anyone else’s use of the Website.
+                </p>
+                <p><strong>You must not:</strong></p>
+                <ul>
+                    <li>Misuse the Website or its content</li>
+                    <li>Attempt to gain unauthorized access</li>
+                    <li>Introduce viruses or harmful code</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h3><span>2.</span> Intellectual Property</h3>
+                <p>
+                    All content on this Website, including text, graphics, logos, images, and design,
+                    is the property of Japyara unless otherwise stated.
+                </p>
+                <p><strong>You may not:</strong></p>
+                <ul>
+                    <li>Copy, reproduce, or redistribute content</li>
+                    <li>Use any content for commercial purposes without prior written permission</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h3><span>3.</span> User Content</h3>
+                <p>
+                    If you submit any content (such as messages, feedback, or forms), you agree that:
+                </p>
+                <ul>
+                    <li>The content is accurate and lawful</li>
+                    <li>You grant us the right to use it for improving our services</li>
+                    <li>It does not violate any third-party rights</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h3><span>4.</span> Limitation Of Liability</h3>
+                <p>Japyara is not liable for:</p>
+                <ul>
+                    <li>Any direct or indirect damages</li>
+                    <li>Loss of data or profits</li>
+                    <li>Website downtime or errors</li>
+                </ul>
+                <p>Your use of the Website is at your own risk.</p>
+            </div>
+
+            <div class="policy-card">
+                <h3><span>5.</span> Third-Party Links</h3>
+                <p>
+                    This Website may contain links to third-party websites.
+                    We are not responsible for the content, privacy policies,
+                    or practices of any external sites.
+                </p>
+            </div>
+
+            <div class="policy-card">
+                <h3><span>6.</span> Termination</h3>
+                <p>
+                    We reserve the right to suspend or terminate access to the Website
+                    at any time, without notice, if these Terms are violated.
+                </p>
+            </div>
+
+            <div class="policy-card">
+                <h3><span>7.</span> Changes To Terms</h3>
+                <p>
+                    We may update these Terms & Conditions at any time.
+                    Changes will be effective immediately upon posting on this page.
+                    Continued use of the Website means you accept the updated terms.
+                </p>
+            </div>
+
+            <div class="policy-card">
+                <h3><span>8.</span> Governing Law</h3>
+                <p>
+                    These Terms & Conditions are governed by and interpreted
+                    in accordance with the laws of India,
+                    without regard to conflict of law principles.
+                </p>
+            </div>
+
+            <div class="policy-card">
+                <h3><span>9.</span> Contact Us</h3>
+                <p>
+                    If you have questions about these Terms & Conditions, you can contact us at:
+                </p>
+                <p><strong>Email:</strong> sakhi@japyara.com</p>
+                <p><strong>Website:</strong> https://imankush25.github.io/Japyara/index.html</p>
+            </div>
+
+        </div>
+        
+        <div class="quick-help">
+            <h2>Need Quick Help?</h2>
+
+            <div class="quick-help-grid">
+                <div class="help-card">
+                    <div class="help-icon"><i class="bi bi-headset"></i></div>
+                    <h4>Devotee Centre</h4>
+                    <p>We're here to help.</p>
+                </div>
+
+                <div class="help-card">
+                    <div class="help-icon"><i class="bi bi-box-seam"></i></div>
+                    <h4>Order Tracking</h4>
+                    <p>Track your spiritual items.</p>
+                </div>
+
+                <div class="help-card">
+                    <div class="help-icon"><i class="bi bi-people"></i></div>
+                    <h4>Become a Vendor</h4>
+                    <p>Partner with us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-wrapper">
+
+        <div class="newsletter-card">
+            <h2>Stay Home & Get Your Daily Needs From Our Shop</h2>
+
+            <div class="newsletter-form">
+                <div class="input-box">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email address">
+                </div>
+
+                <button class="subscribe-btn">
+                    <i class="bi bi-arrow-up-right-circle-fill"></i>
+                    SUBSCRIBE NOW
+                </button>
+            </div>
+
+            <p class="newsletter-note">
+                By subscribing you agree to our
+                <a href="terms.html">Terms & Conditions</a> and
+                <a href="privacy.html">Privacy & Cookies Policy</a>.
+            </p>
+        </div>
+
+    </section>
+
+    <footer class="site-footer">
+
+        <div class="footer-overlay">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <img src="assets/logo2.png" alt="Japyara">
+                    <p>
+                        We curate authentic puja essentials and kits with purity,
+                        care, and reverence—making every ritual simple, sacred,
+                        and meaningful.
+                    </p>
+                </div>
+ 
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <a href="#">Murti & Vastra</a>
+                    <a href="#">Puja Bartan</a>
+                    <a href="#">Ghee & Teil</a>
+                    <a href="#">Dhup & Agarbatti</a>
+                    <a href="#">Pustak & Yantra</a>
+                    <a href="#">Photo Frame</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>.</h4>
+                    <a href="#">Mala & Rudrashak</a>
+                    <a href="#">Hawan & Attar</a>
+                    <a href="#">Prasad & Gangajal</a>
+                    <a href="#">Sankh & Instruments</a>
+                    <a href="#">Mandir & Aashan</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Trending Collection</h4>
+                    <a href="#">Puja Kits Collection</a>
+                    <a href="#">Aarti Thali Collection</a>
+                    <a href="#">Brass Bell Collection</a>
+                    <a href="#">Spiritual Santo Sticks</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Hot Deals</h4>
+                    <a href="#">Ghee Diya Batti</a>
+                    <a href="#">Round Roli Akshat Pooja Thali</a>
+                    <a href="#">Golden Ganesha Showpiece</a>
+                    <a href="#">Seller FAQs</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="blog.html">Blog</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Devotee Centre</a>
+                    <a href="faq.html">FAQs</a>
+                    <a href="vendor.html">Become Vendor</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Socials</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Google</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>Copyright © 2026. All Rights Reserved</span>
+
+                <div class="footer-links">
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

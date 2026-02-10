@@ -1572,12 +1572,12 @@ h2 {
     position: relative;
     z-index: 1;
     font-size: 12px;
-    padding: 10px 90px 24px;
+    padding: 10px 60px 24px;
 }
 
 .footer-content {
     display: grid;
-    grid-template-columns: 2.2fr 1fr 1.3fr 1.2fr 1fr 1fr;
+    grid-template-columns: 2.5fr 1fr 1fr 1.2fr 1.6fr 1fr 1fr;
     gap: 28px;
     margin-bottom: 36px;
 }
@@ -1628,391 +1628,155 @@ h2 {
 
 @media (max-width: 768px) {
 
-    h2 {
-        font-size: 24px;
-    }
-
-    .nav-item span{
-        display:none;
-    }
-
-    .hero-content h1 {
-        font-size: 30px;
-        line-height: 1.2;
-    }
-
-    .hero-content p {
-        font-size: 13px;
-    }
-
-    .btn {
-        font-size: 10px;
-        padding: 6px 12px;
-    }
-
-    .cat-item {
-        width: 96px;
-    }
-
-    .cat-circle {
-        width: 88px;
-        height: 88px;
-    }
-
-    .cat-circle img {
-        width: 64px;
-        height: 64px;
-    }
-
-    .cat-label {
-        font-size: 12px;
-    }
-
-    .puja-kit-card,
-    .product-card {
-        min-width: 170px;
-    }
-
-    .card-img img {
-        height: 150px;
-    }
-
-    .card-body h4 {
-        font-size: 13px;
-    }
-
-    .price {
-        font-size: 14px;
-    }
-
-    .custom-kit-section {
-        flex-direction: column;
-        padding: 0 16px;
-        text-align: center;
-    }
-
-    .secBG {
-        opacity: 0.04;
-    }
-
-    .custom-kit-content {
-        margin: 0;
-        max-width: 100%;
-    }
-
-    .thali-image {
-        position: relative;
-        margin-top: 10px;
-    }
-
-    .kit-item {
-        width: 96px;
-        height: 96px;
-    }
-
-    .thali-image img {
-        width: 420px;
-    }
-
-    .membership-section {
-        padding: 80px 60px;
-    }
-
-    .membership-header p {
-        font-size: 13px;
-        line-height: 1.5;
-        margin: 0 auto;
-        max-width: 100%;
-        margin-top: -50px;
-    }
-
-    .membership-cards {
-        flex-direction: column;
-        gap: 16px;
-        margin-bottom: -80px;
-    }
-
-    .membership-card {
-        width: 90%;
-    }
-
-    .tagline {
-        font-size: 13px;
-    }
-
-    .price strong {
-        font-size: 22px;
-    }
-
-    .price span {
-        font-size: 14px;
-    }
-
-    .description {
-        font-size: 14px;
-        margin-bottom: 14px;
-    }
-
-    .features i {
-        font-size: 8px;
-    }
-    .features li {
-        font-size: 14px;
-    }
-
-    .include-icon i{
-        font-size:20px;
-    }
-
-    .include-item{
-        width: 5px;
-    }
-
-    .celebration-section {
-        padding-top: 40px;
-    }
-
-    .celebration-wrapper {
-        margin: 0 32px;
-        border-radius: 18px;
-    }
-
-    .celebration-banner {
-        padding: 1px;
-    }
-
-    .celebration-banner h2 {
-        font-size: 22px;
-        margin-bottom: 4px;
-    }
-
-    .celebration-banner p {
-        font-size: 12px;
-    }
-
-    .celebration-header {
-        flex-direction: row;
-        gap: 12px;
-        padding: 12px;
-        text-align: center;
-    }
-
-    .celebration-header h3 {
-        font-size: 20px;
-    }
-
-    .celebration-actions {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .outline-btn,
-    .primary-btn {
-        font-size: 10px;
-        padding: 6px 10px;
-    }
-
-    .celebration-cards {
-        flex-direction: row;
-        gap: 5px;
-        padding: 13px;
-        margin: auto 0;
-    }
-
-    .celebration-card {
-        padding: 0 16px 16px;
-    }
-
-    .card-date {
-        font-size: 12px;
-        padding: 6px;
-    }
-
-    .celebration-card h4 {
-        font-size: 14px;
-        height: 50px;
-    }
-
-    .plan-btn {
-        font-size: 10px;
-        padding: 6px 28px;
-    }
-
-    .service-card {
-        min-height: auto;
-        padding: 5px 0px 95px;
-        padding-right: 20px;
-        text-align: left;
-    }
-
-    .service-content {
-        position: relative;
-        padding-right: 20px;
-    }
-
-    .service-content h3 {
-        font-size: 16px;
-    }
-
-    .service-content p {
-        font-size: 10px;
-        max-width: 100%;
-        margin-bottom: 12px;
-    }
-
-    .service-btn {
-        font-size: 7px;
-        padding: 3px 6px;
-    }
-
-    .service-btn i{
-        font-size: 12px;
-    }
-
-    .service-img {
-        position: absolute;
-        max-height: 42%;
-    }
-
-    .why-japyara-section {
-        padding: 50px 18px;
-        margin-top: -80px;
-    }
-
-    .why-features {
-        flex-direction: row;
-        gap: 14px;
-    }
-
-    .why-item {
-        font-size: 12px;
-        gap: 8px;
-    }
-
-    .why-item i {
-        font-size: 20px;
-    }
-
-    .testimonials-section {
-        padding: 18px 32px;
-        height: auto;
-    }
-
-    .testimonials-left {
-        max-width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .testimonial-arrows {
-        margin: 20px 0;
-        justify-content: center;
-    }
-
-    .testimonials-cards {
-        margin: 0;
-        flex-direction: column;
-        gap: 16px;
-        align-items: center;
-    }
-
-    .testimonial-card {
-        width: 360px;
-        padding: 18px;
-    }
-
-    .testimonial-card p {
-        font-size: 13px;
-    }
-
-    .blog-section {
-        padding: 20px 0 100px;
-    }
-
-    .blog-list {
-        flex-direction: column;
-        gap: 18px;
-        margin: 20px 16px;
-    }
-
-    .blog-card {
-        flex-direction: column;
-        min-width: 100%;
-        height: auto;
-    }
-
-    .blog-image {
-        width: 100%;
-        height: 180px;
-    }
-
-    .blog-content {
-        width: 100%;
-        padding: 18px;
-    }
-
-    .blog-content h3 {
-        font-size: 18px;
-    }
-
-    .blog-content p {
-        font-size: 13px;
-    }
-
-    .newsletter-wrapper {
-        margin-bottom: -120px;
-    }
-
-    .newsletter-card {
-        width: 68%;
-        padding: 26px 16px 32px;
-        margin-top: -80px;
-    }
-
-    .newsletter-card h2 {
-        font-size: 16px;
-        font-weight: 500;
-    }
-
-    .newsletter-form {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .input-box {
-        width: 50%;
-        height: 35px;
-    }
-
-    .newsletter-note {
-        font-size: 11px;
-    }
-
-    .site-footer {
-        padding-top: 160px;
-    }
-
-    .footer-overlay {
-        padding: 0px 60px;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        gap: 25px;
-    }
-
-    .footer-brand {
-        grid-column: 1 / -1;
-        text-align: center;
-        margin-bottom: -20px;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-        font-size: 11px;
-        padding-bottom: 20px;
-    }
+  h2 {
+    font-size: 24px;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main-header {
+    padding: 10px 16px;
+  }
+
+  .nav-left,
+  .nav-right {
+    gap: 10px;
+  }
+
+  .nav-item i {
+    font-size: 18px;
+  }
+
+  .nav-item {
+    font-size: 0px;
+  }
+
+  .header-logo img {
+    height: 42px;
+  }
+
+  .dropdown-menu {
+    position: fixed;
+    top: 108px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .hero-carousel {
+    height: 55vh;
+  }
+
+  .hero-content {
+    left: 18px;
+    max-width: 45%;
+    text-align: left;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+
+  .hero-content p {
+    font-size: 12px;
+  }
+
+  .hero-buttons {
+    width: 350px;
+  }
+
+  .play-btn {
+    right: 100px;
+    width: 54px;
+    height: 54px;
+    font-size: 24px;
+  }
+
+  .category-strip {
+    padding: 40px 24px;
+  }
+
+  .cat-item {
+    width: 90px;
+  }
+
+  .cat-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .cat-circle img {
+    width: 88px;
+    height: 88px;
+  }
+
+  .cat-label {
+    font-size: 12px;
+  }
+
+ .puja-kits-section,
+  .product-strip {
+    padding: 40px 24px;
+  }
+
+  .puja-kit-card {
+    min-width: 180px;
+  }
+
+  .card-img img {
+    height: 180px;
+  }
+
+  .card-body h4 {
+    font-size: 14px;
+  }
+
+  .kit-highlights {
+    gap: 14px;
+  }
+
+  .highlight {
+    width: auto;
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+
+  .custom-kit-section {
+    flex-direction: column;
+    padding: 0px 16px;
+  }
+
+  .custom-kit-content {
+    margin-left: 10px;
+  }
+
+  .kit-builder {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .kit-item {
+    width: 100px;
+    height: 100px;
+  }
+
+  .kit-item img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .thali-image {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .thali-image img {
+    width: 320px;
+  }
+
 }

@@ -261,50 +261,104 @@ function closeSubscribePopup() {
     window.location.href = "index.html";
 }
 
-document.querySelectorAll(".faq-item .question").forEach(question => {
-    question.addEventListener("click", () => {
-        const answer = question.nextElementSibling;
-        answer.style.display =
-            answer.style.display === "block" ? "none" : "block";
-    });
-});
+// document.querySelectorAll(".faq-item .question").forEach(question => {
+//     question.addEventListener("click", () => {
+//         const answer = question.nextElementSibling;
+//         answer.style.display =
+//             answer.style.display === "block" ? "none" : "block";
+//     });
+// });
 
 
-document.querySelector(".upgrade-strip button").addEventListener("click", () => {
-    const confirmUpgrade = confirm(
-        "Upgrade to Sanatan Membership?\nAny remaining days will be adjusted."
-    );
-    if (confirmUpgrade) {
-        alert("Redirecting to Payment Page...");
-        window.location.href = "payment.html";
-    }
-});
+// document.querySelector(".upgrade-strip button").addEventListener("click", () => {
+//     const confirmUpgrade = confirm(
+//         "Upgrade to Sanatan Membership?\nAny remaining days will be adjusted."
+//     );
+//     if (confirmUpgrade) {
+//         alert("Redirecting to Payment Page...");
+//         window.location.href = "payment.html";
+//     }
+// });
 
-document.querySelector(".pause-btn").addEventListener("click", () => {
-    const confirmPause = confirm(
-        "Pause your membership for a week?\nBenefits will resume automatically."
-    );
-    if (confirmPause) {
-        alert("Membership paused for 7 days.");
-    }
-});
+// document.querySelector(".pause-btn").addEventListener("click", () => {
+//     const confirmPause = confirm(
+//         "Pause your membership for a week?\nBenefits will resume automatically."
+//     );
+//     if (confirmPause) {
+//         alert("Membership paused for 7 days.");
+//     }
+// });
 
-document.querySelector(".cancel-btn").addEventListener("click", () => {
-    const confirmCancel = confirm(
-        "Are you sure you want to cancel your membership?\nThis action cannot be undone."
-    );
-    if (confirmCancel) {
-        alert("Your membership has been cancelled.");
-    }
-});
+// document.querySelector(".cancel-btn").addEventListener("click", () => {
+//     const confirmCancel = confirm(
+//         "Are you sure you want to cancel your membership?\nThis action cannot be undone."
+//     );
+//     if (confirmCancel) {
+//         alert("Your membership has been cancelled.");
+//     }
+// });
 
-document.querySelector(".renew-btn").addEventListener("click", () => {
-    alert("Redirecting to renewal payment...");
-    window.location.href = "payment.html";
-});
+// document.querySelector(".renew-btn").addEventListener("click", () => {
+//     alert("Redirecting to renewal payment...");
+//     window.location.href = "payment.html";
+// });
 
 function scrollToComparison() {
     document
         .querySelector(".plan-comparison")
         .scrollIntoView({ behavior: "smooth" });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const tabs = document.querySelectorAll(".faq-cat");
+    const faqs = document.querySelectorAll(".faq-item");
+
+    if (!tabs.length || !faqs.length) return;
+
+    tabs.forEach(tab => tab.classList.remove("active"));
+    faqs.forEach(faq => {
+        faq.style.display = "none";
+        faq.classList.remove("active");
+        faq.querySelector(".faq-question i").className = "bi bi-plus";
+    });
+
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            const cat = tab.dataset.filter;
+
+            tabs.forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+
+            faqs.forEach(faq => {
+                faq.style.display = "none";
+                faq.classList.remove("active");
+                faq.querySelector(".faq-question i").className = "bi bi-plus";
+
+                if (faq.dataset.category === cat) {
+                    faq.style.display = "block";
+                }
+            });
+        });
+    });
+
+    faqs.forEach(faq => {
+        const question = faq.querySelector(".faq-question");
+        const icon = question.querySelector("i");
+
+        question.addEventListener("click", () => {
+            faqs.forEach(item => {
+                if (item !== faq && item.dataset.category === faq.dataset.category) {
+                    item.classList.remove("active");
+                    item.querySelector(".faq-question i").className = "bi bi-plus";
+                }
+            });
+
+            faq.classList.toggle("active");
+            icon.className = faq.classList.contains("active")
+                ? "bi bi-dash"
+                : "bi bi-plus";
+        });
+    });
+
+});

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japyara</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="internal.css"/>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <div class="top-announcement">
+        ORDERING AND DELIVERY OF PERISHABLE PRODUCTS WILL GET DONE WITHIN 24 HOURS.
+    </div>
+
+    <header class="main-header">
+
+        <div class="nav-left">
+            <div class="nav-item dropdown mobile-menu-btn">
+                <a id="menuToggle">
+                    <span class="nav-icon"><i class="bi bi-list"></i></span>
+                    Menu
+                </a>
+
+                <ul class="dropdown-menu" id="mobileMenu">
+                    <li><a href="profile.html"><i class="bi bi-person"></i> My Profile</a></li>
+                    <li><a href="orders.html"><i class="bi bi-box-seam"></i> Orders</a></li>
+                    <li><a href="wishlist.html"><i class="bi bi-bag-heart"></i> Wishlist</a></li>
+                    <li><a href="newsletter.html"><i class="bi bi-newspaper"></i> Newsletter</a></li>
+                    <li><a href="deactive.html"><i class="bi bi-person-dash"></i> Deactivate Account</a></li>
+                    <li><a href="javascript:void(0)" onclick="openLogoutPopup()"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <a href="pujaKit.html"><i class="bi bi-flower1"></i>
+                <span>Puja Kit</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="panchang.html"><i class="bi bi-calendar-event"></i>
+                <span>Panchang</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="pandit.html"><i class="bi bi-person"></i>
+                <span>Pandit ji</span></a>
+            </div>
+            <div class="nav-item hot">
+                <i class="bi bi-fire"></i>
+                <span>Hot Deals</span>
+            </div>
+        </div>
+
+        <div class="header-logo">
+            <a href="index.html"><img src="assets/logo.png" alt="Logo"></a>
+        </div>
+
+        <div class="nav-right">
+            <div class="nav-item">
+                <i class="bi bi-search"></i>
+                <span>AI Search</span>
+            </div>
+            <div class="nav-item">
+                <a href="wishlist.html"><i class="bi bi-heart"></i>
+                <span>Wishlist</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="cart.html"><i class="bi bi-cart3"></i>
+                <span>Cart</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="notification.html"><i class="bi bi-bell"></i>
+                <span>Notifications</span></a>
+            </div>
+            <div class="nav-item">
+                <a href="signin.html"><i class="bi bi-person-circle"></i>
+                <span>Sign In</span></a>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="faq-section">
+
+        <div class="faq-hero">
+            <div class="faq-hero-overlay">
+                <h1>Frequently Asked Questions</h1>
+                <p>
+                    Find quick answers to common questions about Japyara, our products,
+                    services, memberships, and spiritual offerings.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-container">
+            <h2>Categories</h2>
+
+            <div class="faq-categories">
+                <div class="faq-cat active" data-filter="general"><i class="bi bi-command"></i>General</div>
+                <div class="faq-cat" data-filter="products"><i class="bi bi-box2"></i>Products</div>
+                <div class="faq-cat" data-filter="orders"><i class="bi bi-cart"></i>Orders</div>
+                <div class="faq-cat" data-filter="panchang"><i class="bi bi-calendar-week"></i>Panchang</div>
+                <div class="faq-cat" data-filter="pandit"><i class="bi bi-gear"></i>Pandit Services</div>
+                <div class="faq-cat" data-filter="membership"><i class="bi bi-cash-stack"></i>Membership</div>
+                <div class="faq-cat" data-filter="account"><i class="bi bi-person"></i>Account</div>
+                <div class="faq-cat" data-filter="support"><i class="bi bi-headset"></i>Support</div>
+            </div>
+        </div>
+
+        <div class="faq-list">
+
+            <div class="faq-item" data-category="general">
+            <div class="faq-question">What is Japyara?<i class="bi bi-plus"></i></div>
+            <div class="faq-answer">A hybrid virtual assistant combines AI automation with human expertise to deliver efficient, reliable, and personalized support. It automates routine tasks using AI while escalating complex or sensitive issues to human agents.</div>
+            </div>
+
+            <div class="faq-item" data-category="general">
+            <div class="faq-question"><span>What kind of products does Japyara offer?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">We offer puja kits, samagri, diyas, incense, and sacred items.</div>
+            </div>
+
+            <div class="faq-item" data-category="general">
+            <div class="faq-question"><span>Are Japyara products suitable for home pooja and temple use?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, Japyara products are designed for both home and temple use.</div>
+            </div>
+
+            <div class="faq-item" data-category="general">
+            <div class="faq-question"><span>Does Japyara sell complete pooja kits?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">All rituals and products follow authentic Vedic and regional traditions.</div>
+            </div>
+
+            <div class="faq-item" data-category="general">
+            <div class="faq-question"><span>Are the pooja items authentic and traditionally prepared?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, Japyara provides step-by-step guidance for beginners.</div>
+            </div>
+
+            <div class="faq-item" data-category="general">
+            <div class="faq-question"><span>Who can use Japyara products?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, one account can be used by the entire household.</div>
+            </div>
+
+            <div class="faq-item" data-category="general">
+            <div class="faq-question"><span>Are the products suitable for daily pooja as well as festivals?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, regional and family-specific rituals are respected.</div>
+            </div>
+
+            <div class="faq-item" data-category="general">
+            <div class="faq-question"><span>Can beginners perform pooja using Japyara kits?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, Japyara kits are designed to be beginner-friendly with clear instructions.</div>
+            </div>
+
+            <div class="faq-item" data-category="general">
+            <div class="faq-question"><span>Does Japyara offer deity-specific pooja items?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, we offer deity-specific and festival-based puja items.</div>
+            </div>
+
+            <div class="faq-item" data-category="products">
+            <div class="faq-question"><span>What kind of products does Japyara offer?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">We offer puja kits, samagri, diyas, incense, and sacred items.</div>
+            </div>
+
+            <div class="faq-item" data-category="products">
+            <div class="faq-question"><span>Are Japyara products eco-friendly?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Most products are made using natural and eco-friendly materials.</div>
+            </div>
+
+            <div class="faq-item" data-category="products">
+            <div class="faq-question"><span>Do you sell deity-specific puja kits?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, deity-specific and festival-based puja kits are available.</div>
+            </div>
+
+            <div class="faq-item" data-category="products">
+            <div class="faq-question"><span>Are products suitable for temple use?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, selected products are suitable for both home and temple rituals.</div>
+            </div>
+
+            <div class="faq-item" data-category="products">
+            <div class="faq-question"><span>Are products quality checked?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">All products undergo strict quality checks.</div>
+            </div>
+
+            <div class="faq-item" data-category="products">
+            <div class="faq-question"><span>Can I buy individual samagri items?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, individual items are also available.</div>
+            </div>
+
+            <div class="faq-item" data-category="products">
+            <div class="faq-question"><span>Do products include instructions?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, step-by-step instructions are included where needed.</div>
+            </div>
+
+            <div class="faq-item" data-category="products">
+            <div class="faq-question"><span>Can I gift Japyara products?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, many products are suitable for gifting.</div>
+            </div>
+
+            <div class="faq-item" data-category="orders">
+            <div class="faq-question"><span>How can I track my order?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">You can track your order using order ID or registered mobile number.</div>
+            </div>
+
+            <div class="faq-item" data-category="orders">
+            <div class="faq-question"><span>What is the delivery time?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Most orders are delivered within 3-7 working days.</div>
+            </div>
+
+            <div class="faq-item" data-category="orders">
+            <div class="faq-question"><span>Can I cancel my order?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Orders can be cancelled before dispatch.</div>
+            </div>
+
+            <div class="faq-item" data-category="orders">
+            <div class="faq-question"><span>What payment methods are accepted?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">UPI, cards, net banking, and wallets are supported.</div>
+            </div>
+
+            <div class="faq-item" data-category="orders">
+            <div class="faq-question"><span>Is Cash on Delivery available?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">COD is available for selected locations.</div>
+            </div>
+
+            <div class="faq-item" data-category="orders">
+            <div class="faq-question"><span>Can I change delivery address?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Address can be changed before order dispatch.</div>
+            </div>
+
+            <div class="faq-item" data-category="orders">
+            <div class="faq-question"><span>What if my order is delayed?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">You can contact support for real-time updates.</div>
+            </div>
+
+            <div class="faq-item" data-category="orders">
+            <div class="faq-question"><span>What if items are missing?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Please report immediately for quick resolution.</div>
+            </div>
+
+            <div class="faq-item" data-category="panchang">
+            <div class="faq-question"><span>What is the Panchang feature?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Panchang helps plan rituals using traditional Hindu calendars.</div>
+            </div>
+
+            <div class="faq-item" data-category="panchang">
+            <div class="faq-question"><span>Is Panchang updated daily?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, Panchang data is updated every day.</div>
+            </div>
+
+            <div class="faq-item" data-category="panchang">
+            <div class="faq-question"><span>Does it show auspicious timings?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, it includes muhurat, tithi, and rahu kaal.</div>
+            </div>
+
+            <div class="faq-item" data-category="panchang">
+            <div class="faq-question"><span>Can I check future dates?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, future Panchang dates can be accessed.</div>
+            </div>
+
+            <div class="faq-item" data-category="panchang">
+            <div class="faq-question"><span>Is Panchang free to use?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Basic Panchang features are free.</div>
+            </div>
+
+            <div class="faq-item" data-category="panchang">
+            <div class="faq-question"><span>Does Panchang show festival dates?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, all major Hindu festivals are listed.</div>
+            </div>
+
+            <div class="faq-item" data-category="panchang">
+            <div class="faq-question"><span>Is it beginner friendly?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, explanations are kept simple.</div>
+            </div>
+
+            <div class="faq-item" data-category="panchang">
+            <div class="faq-question"><span>Does it support regional calendars?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Regional variations are supported.</div>
+            </div>
+
+            <div class="faq-item" data-category="pandit">
+            <div class="faq-question"><span>Does Japyara provide Pandit services?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, verified Pandits are available for booking.</div>
+            </div>
+
+            <div class="faq-item" data-category="pandit">
+            <div class="faq-question"><span>Are Pandits verified?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">All Pandits are background verified.</div>
+            </div>
+
+            <div class="faq-item" data-category="pandit">
+            <div class="faq-question"><span>Can I book Pandits for festivals?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, festival and ceremony bookings are supported.</div>
+            </div>
+
+            <div class="faq-item" data-category="pandit">
+            <div class="faq-question"><span>Are online pujas available?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, selected pujas can be performed online.</div>
+            </div>
+
+            <div class="faq-item" data-category="pandit">
+            <div class="faq-question"><span>Can I reschedule a Pandit booking?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Rescheduling is allowed as per policy.</div>
+            </div>
+
+            <div class="faq-item" data-category="pandit">
+            <div class="faq-question"><span>Do Pandits explain rituals?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, rituals are explained during the puja.</div>
+            </div>
+
+            <div class="faq-item" data-category="pandit">
+            <div class="faq-question"><span>Can I select language preference?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, language preferences are supported.</div>
+            </div>
+
+            <div class="faq-item" data-category="pandit">
+            <div class="faq-question"><span>Is pricing transparent?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, all prices are clearly shown before booking.</div>
+            </div>
+
+            <div class="faq-item" data-category="membership">
+            <div class="faq-question"><span>What are the benefits of membership?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Members receive discounts, priority support, and early access.</div>
+            </div>
+
+            <div class="faq-item" data-category="membership">
+            <div class="faq-question"><span>Is membership mandatory?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">No, membership is optional.</div>
+            </div>
+
+            <div class="faq-item" data-category="membership">
+            <div class="faq-question"><span>Are multiple plans available?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, multiple membership plans are offered.</div>
+            </div>
+
+            <div class="faq-item" data-category="membership">
+            <div class="faq-question"><span>Can I upgrade my plan?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, upgrades are supported.</div>
+            </div>
+
+            <div class="faq-item" data-category="membership">
+            <div class="faq-question"><span>Can I cancel membership?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, you can cancel anytime.</div>
+            </div>
+
+            <div class="faq-item" data-category="membership">
+            <div class="faq-question"><span>Does membership auto-renew?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Auto-renew depends on your settings.</div>
+            </div>
+
+            <div class="faq-item" data-category="membership">
+            <div class="faq-question"><span>Are festival offers included?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, festival perks are included.</div>
+            </div>
+
+            <div class="faq-item" data-category="membership">
+            <div class="faq-question"><span>How do I view membership status?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">You can view status from the My Membership section.</div>
+            </div>
+
+            <div class="faq-item" data-category="account">
+            <div class="faq-question"><span>Is account creation mandatory?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, an account is required for orders and bookings.</div>
+            </div>
+
+            <div class="faq-item" data-category="account">
+            <div class="faq-question"><span>Can I update my profile?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, profile details can be updated anytime.</div>
+            </div>
+
+            <div class="faq-item" data-category="account">
+            <div class="faq-question"><span>Can I save multiple addresses?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, multiple addresses can be saved.</div>
+            </div>
+
+            <div class="faq-item" data-category="account">
+            <div class="faq-question"><span>How do I reset my password?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Use the Forgot Password option.</div>
+            </div>
+
+            <div class="faq-item" data-category="account">
+            <div class="faq-question"><span>Is my data secure?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, we follow strict data security policies.</div>
+            </div>
+
+            <div class="faq-item" data-category="account">
+            <div class="faq-question"><span>Can I delete my account?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, account deletion can be requested.</div>
+            </div>
+
+            <div class="faq-item" data-category="account">
+            <div class="faq-question"><span>Can I view order history?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, all past orders are visible in your account.</div>
+            </div>
+
+            <div class="faq-item" data-category="account">
+            <div class="faq-question"><span>Will I receive notifications?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, important updates are notified.</div>
+            </div>
+
+            <div class="faq-item" data-category="support">
+            <div class="faq-question"><span>How can I contact customer support?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">You can contact us via Devotee Centre, chat, or email.</div>
+            </div>
+
+            <div class="faq-item" data-category="support">
+            <div class="faq-question"><span>Is support available 24/7?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Support timings vary by channel.</div>
+            </div>
+
+            <div class="faq-item" data-category="support">
+            <div class="faq-question"><span>How fast is the response time?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Most queries are answered within 24 hours.</div>
+            </div>
+
+            <div class="faq-item" data-category="support">
+            <div class="faq-question"><span>Is chat support available?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, chat support is available during working hours.</div>
+            </div>
+
+            <div class="faq-item" data-category="support">
+            <div class="faq-question"><span>Can I raise a support ticket?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, tickets can be raised via the Devotee Centre.</div>
+            </div>
+
+            <div class="faq-item" data-category="support">
+            <div class="faq-question"><span>Do you help with refunds?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, refunds are processed as per policy.</div>
+            </div>
+
+            <div class="faq-item" data-category="support">
+            <div class="faq-question"><span>Is multilingual support available?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Yes, selected languages are supported.</div>
+            </div>
+
+            <div class="faq-item" data-category="support">
+            <div class="faq-question"><span>How can I give feedback?</span><i class="bi bi-plus"></i></div>
+            <div class="faq-answer">Feedback can be submitted via support.</div>
+            </div>
+
+            </div>
+
+        <div class="quick-help">
+            <h2>Need Quick Help?</h2>
+
+            <div class="quick-help-grid">
+                <div class="help-card">
+                    <div class="help-icon"><i class="bi bi-headset"></i></div>
+                    <h4>Devotee Centre</h4>
+                    <p>We're here to help.</p>
+                </div>
+
+                <div class="help-card">
+                    <div class="help-icon"><i class="bi bi-box-seam"></i></div>
+                    <h4>Order Tracking</h4>
+                    <p>Track your spiritual items.</p>
+                </div>
+
+                <div class="help-card">
+                    <div class="help-icon"><i class="bi bi-people"></i></div>
+                    <h4>Become a Vendor</h4>
+                    <p>Partner with us.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="newsletter-wrapper">
+
+        <div class="newsletter-card">
+            <h2>Stay Home & Get Your Daily Needs From Our Shop</h2>
+
+            <div class="newsletter-form">
+                <div class="input-box">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email address">
+                </div>
+
+                <button class="subscribe-btn">
+                    <i class="bi bi-arrow-up-right-circle-fill"></i>
+                    SUBSCRIBE NOW
+                </button>
+            </div>
+
+            <p class="newsletter-note">
+                By subscribing you agree to our
+                <a href="terms.html">Terms & Conditions</a> and
+                <a href="privacy.html">Privacy & Cookies Policy</a>.
+            </p>
+        </div>
+
+    </section>
+
+    <footer class="site-footer">
+
+        <div class="footer-overlay">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <img src="assets/logo2.png" alt="Japyara">
+                    <p>
+                        We curate authentic puja essentials and kits with purity,
+                        care, and reverence—making every ritual simple, sacred,
+                        and meaningful.
+                    </p>
+                </div>
+ 
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <a href="#">Murti & Vastra</a>
+                    <a href="#">Puja Bartan</a>
+                    <a href="#">Ghee & Teil</a>
+                    <a href="#">Dhup & Agarbatti</a>
+                    <a href="#">Pustak & Yantra</a>
+                    <a href="#">Photo Frame</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>.</h4>
+                    <a href="#">Mala & Rudrashak</a>
+                    <a href="#">Hawan & Attar</a>
+                    <a href="#">Prasad & Gangajal</a>
+                    <a href="#">Sankh & Instruments</a>
+                    <a href="#">Mandir & Aashan</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Trending Collection</h4>
+                    <a href="#">Puja Kits Collection</a>
+                    <a href="#">Aarti Thali Collection</a>
+                    <a href="#">Brass Bell Collection</a>
+                    <a href="#">Spiritual Santo Sticks</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Hot Deals</h4>
+                    <a href="#">Ghee Diya Batti</a>
+                    <a href="#">Round Roli Akshat Pooja Thali</a>
+                    <a href="#">Golden Ganesha Showpiece</a>
+                    <a href="#">Seller FAQs</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="blog.html">Blog</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Devotee Centre</a>
+                    <a href="faq.html">FAQs</a>
+                    <a href="vendor.html">Become Vendor</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Socials</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Google</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>Copyright © 2026. All Rights Reserved</span>
+
+                <div class="footer-links">
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
